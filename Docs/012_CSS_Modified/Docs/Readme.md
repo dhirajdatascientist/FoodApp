@@ -1,3 +1,72 @@
+## To add a login and signup link to your navbar and then create routes for them in Flask, follow the steps below:
+
+### Step 1: Update the HTML 
+
+Add the login and signup links to the navbar in your HTML:
+
+```html
+<!-- Navbar section start -->
+<nav class="navbar">
+    <a href="/">Home</a>
+    <a href="/about">About</a>
+    <a href="/contact">Contact</a>
+    <a href="/login">Login</a>
+    <a href="/signup">Signup</a>
+    <button onclick="viewCart()">View Cart</button>
+</nav>
+<!-- Navbar section ends -->
+```
+
+### Step 2: Flask Code
+
+Assuming you have Flask set up, you'd need to add the routes for login and signup:
+
+```python
+from flask import Flask, render_template
+
+app = Flask(__name__)
+
+@app.route('/')
+def home():
+    return render_template('index.html')
+
+@app.route('/about')
+def about():
+    return 'About Page'
+
+@app.route('/contact')
+def contact():
+    return 'Contact Page'
+
+@app.route('/login')
+def login():
+    return 'Login Page'
+
+@app.route('/signup')
+def signup():
+    return 'Signup Page'
+
+if __name__ == "__main__":
+    app.run(debug=True)
+```
+
+### Step 3: Login and Signup Templates
+
+For this example, we are just returning simple strings for the login and signup pages. In a real-world scenario, you'd have separate HTML templates for each, and you'd use `render_template('login.html')` and `render_template('signup.html')` to display them.
+
+### Note:
+Ensure that your Flask app structure has the required templates in a "templates" directory and the static files (like CSS, JS, and images) in a "static" directory. 
+
+
+# Changes to css
+
+1. Remove any redundant or duplicate styles.
+2. Consolidate and simplify styles.
+3. Ensure a cohesive look and feel.
+
+CSS
+
+```css
 /* Global styles */
 body {
     font-family: Arial, sans-serif;
@@ -149,3 +218,4 @@ footer {
     padding: 10px 0;
     margin-top: 40px; /* Additional space to separate from content */
 }
+```
