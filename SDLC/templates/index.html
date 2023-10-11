@@ -18,58 +18,59 @@
     <h1>Food4u</h1>
     <p>Welcome to Food4u! We deliver delicious meals to your doorstep.</p>
 
-    <!-- Food Section Start-->
-    <div class="image-grid">
-        <div class="image-item">
-            <img src="{{ url_for('static', filename='img/image1.jpg') }}" alt="Image 1">
-            <h2>Heading 1</h2>
-            <p>Description of image 1.</p>
-            <button onclick="addToCart('Image 1')">Add to Cart</button>
+ <!-- Food Section Start-->
+<div class="image-grid">
+    <div class="image-item">
+        <img src="{{ url_for('static', filename='img/samosa.jpg') }}" alt="Samosa">
+        <h2>Samosa</h2>
+        <p>A crispy, deep-fried snack filled with a spiced mixture of mashed potatoes and other vegetables. A popular snack in Indian cuisine.</p>
+        <button onclick="addToCart('Samosa')">Add to Cart</button>
 
-            <!-- Star Rating System -->
-            <div class="stars" data-item="Image 1">
-                <span class="star" onclick="rateItem(this, 1)">&#9734;</span>
-                <span class="star" onclick="rateItem(this, 2)">&#9734;</span>
-                <span class="star" onclick="rateItem(this, 3)">&#9734;</span>
-                <span class="star" onclick="rateItem(this, 4)">&#9734;</span>
-                <span class="star" onclick="rateItem(this, 5)">&#9734;</span>
-            </div>
-            <p class="rating-text">Average Rating: <span class="average-rating">0</span></p>
+        <!-- Star Rating System -->
+        <div class="stars" data-item="Samosa">
+            <span class="star" onclick="rateItem(this, 1)">&#9734;</span>
+            <span class="star" onclick="rateItem(this, 2)">&#9734;</span>
+            <span class="star" onclick="rateItem(this, 3)">&#9734;</span>
+            <span class="star" onclick="rateItem(this, 4)">&#9734;</span>
+            <span class="star" onclick="rateItem(this, 5)">&#9734;</span>
         </div>
-        <div class="image-item">
-            <img src="{{ url_for('static', filename='img/image2.jpg') }}" alt="Image 2">
-            <h2>Heading 2</h2>
-            <p>Description of image 2.</p>
-            <button onclick="addToCart('Image 2')">Add to Cart</button>
-
-            <!-- Star Rating System -->
-            <div class="stars" data-item="Image 1">
-                <span class="star" onclick="rateItem(this, 1)">&#9734;</span>
-                <span class="star" onclick="rateItem(this, 2)">&#9734;</span>
-                <span class="star" onclick="rateItem(this, 3)">&#9734;</span>
-                <span class="star" onclick="rateItem(this, 4)">&#9734;</span>
-                <span class="star" onclick="rateItem(this, 5)">&#9734;</span>
-            </div>
-            <p class="rating-text">Average Rating: <span class="average-rating">0</span></p>
-        </div>
-        <div class="image-item">
-            <img src="{{ url_for('static', filename='img/image3.jpg') }}" alt="Image 3">
-            <h2>Heading 3</h2>
-            <p>Description of image 3.</p>
-            <button onclick="addToCart('Image 3')">Add to Cart</button>
-
-            <!-- Star Rating System -->
-            <div class="stars" data-item="Image 1">
-                <span class="star" onclick="rateItem(this, 1)">&#9734;</span>
-                <span class="star" onclick="rateItem(this, 2)">&#9734;</span>
-                <span class="star" onclick="rateItem(this, 3)">&#9734;</span>
-                <span class="star" onclick="rateItem(this, 4)">&#9734;</span>
-                <span class="star" onclick="rateItem(this, 5)">&#9734;</span>
-            </div>
-            <p class="rating-text">Average Rating: <span class="average-rating">0</span></p>
-        </div>
-        <!-- Food Section Ends-->
+        <p class="rating-text">Average Rating: <span class="average-rating">0</span></p>
     </div>
+    <div class="image-item">
+        <img src="{{ url_for('static', filename='img/biryani.jpg') }}" alt="Biryani">
+        <h2>Biryani</h2>
+        <p>A fragrant rice dish cooked with a blend of spices, saffron, and either chicken, lamb, or vegetables. A beloved dish in many parts of South Asia.</p>
+        <button onclick="addToCart('Biryani')">Add to Cart</button>
+
+        <!-- Star Rating System -->
+        <div class="stars" data-item="Biryani">
+            <span class="star" onclick="rateItem(this, 1)">&#9734;</span>
+            <span class="star" onclick="rateItem(this, 2)">&#9734;</span>
+            <span class="star" onclick="rateItem(this, 3)">&#9734;</span>
+            <span class="star" onclick="rateItem(this, 4)">&#9734;</span>
+            <span class="star" onclick="rateItem(this, 5)">&#9734;</span>
+        </div>
+        <p class="rating-text">Average Rating: <span class="average-rating">0</span></p>
+    </div>
+    <div class="image-item">
+        <img src="{{ url_for('static', filename='img/burger.jpg') }}" alt="Burger">
+        <h2>Burger</h2>
+        <p>A classic fast-food item consisting of a ground meat patty, often beef, served in a sliced bun with various toppings and condiments.</p>
+        <button onclick="addToCart('Burger')">Add to Cart</button>
+
+        <!-- Star Rating System -->
+        <div class="stars" data-item="Burger">
+            <span class="star" onclick="rateItem(this, 1)">&#9734;</span>
+            <span class="star" onclick="rateItem(this, 2)">&#9734;</span>
+            <span class="star" onclick="rateItem(this, 3)">&#9734;</span>
+            <span class="star" onclick="rateItem(this, 4)">&#9734;</span>
+            <span class="star" onclick="rateItem(this, 5)">&#9734;</span>
+        </div>
+        <p class="rating-text">Average Rating: <span class="average-rating">0</span></p>
+    </div>
+</div>
+<!-- Food Section Ends-->
+
     
     <!-- Cart Modal Start-->
     <div id="cartModal" style="display: none;">
