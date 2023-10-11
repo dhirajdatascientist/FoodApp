@@ -1,42 +1,6 @@
-h1 {
-    color: #FF5733;
-    font-size: 36px;
-    text-align: center;
-}
+## Making Navbar Fixed
 
-
-/* Food Section Start | 3x3 Images */
-.image-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
-}
-
-.image-item {
-    text-align: center;
-}
-
-.image-item img {
-    max-width: 100%;
-}
-
-.image-item h2 {
-    font-size: 18px;
-    margin: 10px 0;
-}
-
-.image-item p {
-    font-size: 14px;
-}
-/* Food Section Ends |  3x3 Images */
-
-/* Footer Section */
-footer {
-    color: black;
-    text-align: center;
-    padding: 10px 0;
-}
-
+```css
 /* Navbar */
 .navbar {
     background-color: #f8f8f8;
@@ -76,3 +40,5 @@ footer {
     background-color: #ddd;
     color: black;
 }
+
+```

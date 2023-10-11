@@ -1,3 +1,12 @@
+# Requirement
+- Given that this is a food delivery site, let's add a feature where users can see their cart items. 
+
+1. Add a "View Cart" button on the navbar.
+2. Create a function to display the cart items in a modal.
+
+# Code
+
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -18,25 +27,7 @@
 
     <!-- Food Section Start-->
     <div class="image-grid">
-        <div class="image-item">
-            <img src="{{ url_for('static', filename='image1.jpg') }}" alt="Image 1">
-            <h2>Heading 1</h2>
-            <p>Description of image 1.</p>
-            <button onclick="addToCart('Image 1')">Add to Cart</button>
-        </div>
-        <div class="image-item">
-            <img src="{{ url_for('static', filename='image2.jpg') }}" alt="Image 2">
-            <h2>Heading 2</h2>
-            <p>Description of image 2.</p>
-            <button onclick="addToCart('Image 2')">Add to Cart</button>
-        </div>
-        <div class="image-item">
-            <img src="{{ url_for('static', filename='image3.jpg') }}" alt="Image 3">
-            <h2>Heading 3</h2>
-            <p>Description of image 3.</p>
-            <button onclick="addToCart('Image 3')">Add to Cart</button>
-        </div>
-        <!-- Food Section Ends-->
+        <!-- ... (rest of the items) ... -->
     </div>
     
     <!-- Cart Modal Start-->
@@ -51,18 +42,12 @@
 
     <!-- Footer Start-->
     <footer>
-        <p>&copy; 2023 Food4u. All rights reserved.</p>
+        <!-- ... -->
     </footer>
-    <!-- Footer Ends-->  
+    <!-- Footer Ends-->
 
     <!-- JavaScript -->
     <script>
-        function addToCart(itemName) {
-            // Implement the logic to add the item to the cart.
-            // For now, it will just alert the user.
-            alert(itemName + " added to cart!");
-        }
-
         var cartItems = []; // to store items added to the cart
 
         function addToCart(itemName) {
@@ -89,3 +74,11 @@
     </script>
 </body>
 </html>
+```
+
+Notes:
+1. A button for "View Cart" was added to the navbar.
+2. A modal structure was added to display cart items.
+3. JavaScript was enhanced to manage cart items and control modal visibility.
+
+To fully implement the modal, you'll need to style it using CSS, making it look like a popup and perhaps add more interactivity like removing items from the cart, etc.
