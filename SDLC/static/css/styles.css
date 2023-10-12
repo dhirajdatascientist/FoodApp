@@ -149,3 +149,40 @@ footer {
     padding: 10px 0;
     margin-top: 40px; /* Additional space to separate from content */
 }
+
+/* Checkout Form Styles */
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+textarea, input[type="text"], input[type="month"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button#placeOrderButton {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button#placeOrderButton:hover {
+    background-color: #45a049;
+}
+

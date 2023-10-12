@@ -46,3 +46,37 @@ function rateItem(star, value) {
         }
     }
 }
+
+
+// Add this function to handle checkout
+function checkout() {
+    const cartList = document.getElementById('cartList');
+    if(cartList.childNodes.length === 0){
+        alert('Your cart is empty. Add items before checking out.');
+        return;
+    }
+    const isConfirmed = confirm('Do you want to proceed to checkout?');
+    if(isConfirmed) {
+        window.location.href = "/checkout";
+    }
+}
+
+// Sample function for closing the cart modal
+function closeModal() {
+    document.getElementById('cartModal').style.display = 'none';
+}
+
+// Sample function for adding an item to the cart
+function addToCart(item) {
+    const cartList = document.getElementById('cartList');
+    const listItem = document.createElement('li');
+    listItem.textContent = item;
+    cartList.appendChild(listItem);
+    document.getElementById('checkoutButton').disabled = false;
+}
+
+// Sample function for viewing the cart
+function viewCart() {
+    document.getElementById('cartModal').style.display = 'block';
+}
+
