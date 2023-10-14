@@ -26,7 +26,3 @@ You can help through UPI: `dhiraj9901@paytm`. Your support keeps the project mov
 1. **🛠️ Creating Tools**: Money is used for important software and hardware, letting me create without limits.
 2. **🌱 Growing Nonstop**: Your help goes into learning and helping our lively, growing community.
 
-### Where Does the Money Go? 💰
-
-1. **🛠️ Creating Tools**: Money is used for important software and hardware, letting me create without limits.
-2. **🌱 Growing Nonstop**: Your help goes into learning and helping our lively, growing community.
